@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <!-- Head, contains important information about the website -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Pokemon Website" />
+    <meta name="keywords" content="Pokemon, game, fun" />
+    <meta name="author" content="Swatilekha Roy" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Style -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
+    <!-- Title of Website -->
+    <title>My Pokemon Zone</title>
+
+    <!-- Font Awesome Icons -->
+    <script
+      src="https://kit.fontawesome.com/26bc379f29.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <!-- Contains all the website content -->
+  <body>
+    <!-- Header -->
+    <header>
+      <img
+        src="assets/logo.png"
+        alt="logo"
+        width="200px"
+        style="display: inline !important"
+      />
+      <span><a href="/">Home</a></span>
+      <span><a href="https://www.pokemon.com">About Pokemon</a></span>
+      <span><a href="https://pokemondb.net/">Pokemon Database</a></span>
+      <span><a href="flashcard.html">Flashcards</a></span>
+    </header>
+
+    <h1>I heart Pokemon!</h1>
+
+    <!-- Pokemon Alert -->
+    <div id="howmanypokemons">
+      <h2>How many Pokemons have you collected?</h2>
+      <form>
+        <label for="name">Enter Your Name</label>
+        <input type="text" name="name" id="username" placeholder="Swatilekha" />
+        <label for="numberofpokemon">Number of Pokemons</label>
+        <input
+          type="number"
+          name="numberofpokemon"
+          id="usernumberofpokemons"
+          placeholder="5"
+        />
+        <button onclick="welcomealert()">Click Me</button>
+      </form>
+    </div>
+
+    <!-- Pokemon Media -->
+    <div class="media">
+      <h2>Pokemon Media</h2>
+      <!-- Audio -->
+      <button onclick="playsound()">Click For Sound</button>
+      <br />
+      <!-- Video -->
+      <video width="30%" controls autoplay>
+        <source src="assets/pokemonvideo.mp4" />
+      </video>
+      <!-- Youtube Embed -->
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/jTmefcxpXs4"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        style="margin-left: 10%"
+      ></iframe>
+    </div>
+
+    <!-- Pokemon List -->
+    <div id="hidenseek">
+      <h2>Pokemon Hide n' Seek</h2>
+      <ul>
+        <li>
+          <img
+            src="https://img.pokemondb.net/sprites/black-white/anim/normal/charizard.gif"
+            alt="Charizard"
+            width="100px"
+            id="charizard"
+          />
+          <button id="charizardbtn" onclick="showcharizard()">
+            Show Charizard
+          </button>
+        </li>
+        <li>
+          <img
+            src="https://img.pokemondb.net/sprites/black-white/anim/normal/wigglytuff.gif"
+            alt="Wigglytuff"
+            width="100px"
+            id="wigglytuff"
+          />
+          <button id="wigglytuffbtn" onclick="showwigglytuff()">
+            Show Wigglytuff
+          </button>
+        </li>
+        <li>
+          <img
+            src="https://img.pokemondb.net/sprites/black-white/anim/normal/venusaur.gif"
+            alt="Venusaur"
+            width="100px"
+            id="venusaur"
+          />
+          <button id="venusaurbtn" onclick="showvenusaur()">
+            Show Venusaur
+          </button>
+        </li>
+        <li>
+          <img
+            src="https://img.pokemondb.net/sprites/black-white/anim/normal/cascoon.gif"
+            alt="Cascoon"
+            width="100px"
+            class="cpokemon"
+          />
+          <img
+            src="https://img.pokemondb.net/sprites/black-white/anim/normal/carvanha.gif"
+            alt="Carvanha"
+            width="100px"
+            class="cpokemon"
+          />
+          <img
+            src="https://img.pokemondb.net/sprites/black-white/anim/normal/corphish.gif"
+            alt="Corphish"
+            width="100px"
+            class="cpokemon"
+          />
+          <button id="cpokemonbtn" onclick="showc()">
+            Show 3 Pokemons starting with "C"
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        Made with <i class="fa fa-duotone fa-heart"></i> by Swatilekha, 2022
+      </p>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>

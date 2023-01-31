@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Pokemon Flashcards" />
+    <meta name="keywords" content="Pokemon, flashcards, games, fun" />
+    <meta name="author" content="Swatilekha Roy" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Style -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
+
+    <!-- Title of Website -->
+    <title>My Pokemon Zone</title>
+
+    <!-- Font Awesome Icons -->
+    <script
+      src="https://kit.fontawesome.com/26bc379f29.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <!-- Website Content -->
+  <body onload="getRandom()">
+    <!-- Header -->
+    <header>
+      <img
+        src="assets/logo.png"
+        alt="logo"
+        width="200px"
+        style="display: inline !important"
+      />
+      <span><a href="index.html">Home</a></span>
+      <span><a href="https://www.pokemon.com">About Pokemon</a></span>
+      <span><a href="https://pokemondb.net/">Pokemon Database</a></span>
+      <span><a href="#">Flashcards</a></span>
+    </header>
+
+    <!-- Flashcards -->
+    <div class="top-content">
+      <div id="flashcard-term">
+        <h2>Term</h2>
+      </div>
+      <div id="flashcard-definition">
+        <p>Definition</p>
+      </div>
+    </div>
+    <div class="flashcard-btn">
+      <button id="flash-def-btn" onclick="showdef()">Show Definition</button>
+      <button type="button" onclick="getRandom()">Next Term</button>
+    </div>
+
+    <!-- Footer -->
+    <footer style="position: fixed">
+      <p>
+        Made with <i class="fa fa-duotone fa-heart"></i> by Swatilekha, 2022
+      </p>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
