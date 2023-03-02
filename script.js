@@ -27,7 +27,6 @@ function playsound() {
 function showcharizard() {
   var imgshow = document.querySelector("#charizard");
   var btntext = document.querySelector("#charizardbtn");
-  audio.play();
   if (imgshow.style.visibility == "hidden") {
     imgshow.style.visibility = "visible";
     btntext.innerHTML = "Hide Charizard";
